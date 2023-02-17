@@ -1,0 +1,9 @@
+@import "./Navbar.scss";
+@import "./_variables.scss";
+@import "https://fonts.googleapis.com/css2?family=Julee&family=Shantell+Sans:wght@300&family=Zeyada&display=swap";
+
+body {
+
+  font-family: 'Shantell Sans', cursive;
+  background-color: var(--background);
+}

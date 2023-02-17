@@ -1,0 +1,87 @@
+@import "./_reset.scss";
+@import "./_variables.scss";
+
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;  
+  gap: 1rem;
+  margin-top: 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  
+  
+  
+
+  .content {
+    background-color: var(--card);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    position: relative;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+
+    h2 {
+     text-transform: uppercase;     
+     margin-top: 5px;
+    }
+    img {
+      max-width: 400px;
+      height: 300px;
+      padding: 1rem;
+      border-radius: 30px;
+      
+      
+      
+    }
+    .desc {
+      padding: 0 1rem;
+      border-radius: 10px;
+      max-height: 0;
+      overflow: hidden;
+      position: absolute;
+      bottom: 5px;
+      font-size: 0.8rem;
+      
+      
+      
+    }
+    &:hover img {
+      filter: grayscale(100%);
+    }
+    &:hover .desc {
+      max-height: 150px;
+      bottom: 5px;
+      transition: max-height 2s;
+      color:black;
+      background-color: white;
+      opacity:0.8;
+      font-weight: 600;
+      padding: 10px; 
+            
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+	.container {    
+	  flex: 45%;
+	}
+  }
+  
+  @media (max-width: 834px) {
+	.container {	  
+	  flex: 80%;
+	}
+  }
+  @media (max-width: 360px) {
+	.container {     
+	  flex : 100%;
+	  }
+  }
